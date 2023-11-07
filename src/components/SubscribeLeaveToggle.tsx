@@ -26,6 +26,7 @@ const SubscribeLeaveToggle = ({
   const { mutate: subscribe, isLoading: isSubLoading } = useMutation({
     mutationFn: async () => {
       const payload: SubscribeToSubredditPayload = {
+      // @ts-ignore
         subredditId,
       }
 
@@ -59,6 +60,7 @@ const SubscribeLeaveToggle = ({
   const { mutate: unsubscribe, isLoading: isUnsubLoading } = useMutation({
     mutationFn: async () => {
       const payload: SubscribeToSubredditPayload = {
+        // @ts-ignore
         subredditId,
       }
 
